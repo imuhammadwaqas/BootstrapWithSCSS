@@ -1,0 +1,77 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+// @import "../node_modules/bootstrap/scss/bootstrap";
+$nav-color:#f7f2f2;
+$nav-link-color:#0a0a0a;
+$link-border-color:#f58d52;
+$body-color-2:rgb(168, 245, 168);
+$body-color-1:rgb(251, 252, 251);
+$body-color-3:rgb(247, 173, 173);
+
+
+// // $logo-width: 70px;
+.body-color-main{
+    background: $body-color-1;
+}
+.foot-bg-color{
+    background-color: #fcf9f9;
+}
+.bg-color{
+    background-color: $nav-color;
+}
+ nav a{
+     color: $nav-link-color;
+     font-weight:bolder !important;
+ }
+ .bg-link{
+    color: #0effff !important;
+ }
+ .fot-logo{
+    width: 120px;
+    height: 100px;
+ }
+.logo-img{
+    
+    width: 70px;
+    margin-left: 35px;
+    margin-top: -20px;
+}
+.nav-link:hover{
+     background-color: #f58d52;
+     border: #f58d52;
+     box-shadow: inset 0 0 0 0 #030303 !important;
+     color: #fcf9f9 !important;
+     border-radius: 5px;
+    
+     font-weight: bolder;
+ }
+ .main-bg{
+    background-image: url("../src/img/bg2.jpg");
+    background-repeat: no-repeat;
+    opacity: .8;
+ }
+ .main-bg::before {
+    position: absolute;
+    top: 10%;
+    right: 10px;
+    bottom: 10%;
+    left: 10px;
+    content: "";
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 5px;
+    
+    
+}
+.fot-a{
+    text-decoration: none
+}
+ 
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+// Then add additional custom code here
